@@ -379,7 +379,7 @@ abstract contract Pool is Clone, ReentrancyGuard, Multicall, IPool {
         uint256 claimable = auctions.kickers[msg.sender].claimable;
 
         // the amount to claim is constrained by the claimable balance of sender
-        // claiming escrowed bonds is not constraiend by the pool balance
+        // claiming escrowed bonds is not constrained by the pool balance
         maxAmount_ = Maths.min(maxAmount_, claimable);
 
         // revert if no amount to claim
