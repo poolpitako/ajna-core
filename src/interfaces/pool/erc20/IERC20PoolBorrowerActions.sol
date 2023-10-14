@@ -27,7 +27,7 @@ interface IERC20PoolBorrowerActions {
      *  @dev    Can be called by borrowers with either `0` `maxQuoteTokenAmountToRepay_` or `0` `collateralAmountToPull_`, if borrower only wants to take a single action. 
      *  @param  borrowerAddress_            The borrower whose loan is being interacted with.
      *  @param  maxQuoteTokenAmountToRepay_ The max amount of quote tokens to repay (`WAD` precision).
-     *  @param  collateralAmountToPull_     The max amount of collateral to be puled from the pool (`WAD` precision).
+     *  @param  collateralAmountToPull_     The max amount of collateral to be pulled from the pool (`WAD` precision).
      *  @param  recipient_                  The address to receive amount of pulled collateral.
      *  @param  limitIndex_                 Ensures `LUP` has not moved far from state when borrower pulls collateral.
      *  @return amountRepaid_               The amount of quote token repaid (`WAD` precision).
