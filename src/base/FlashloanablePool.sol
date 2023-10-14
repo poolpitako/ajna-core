@@ -12,7 +12,7 @@ import { IERC3156FlashBorrower } from '../interfaces/pool/IERC3156FlashBorrower.
  *  @title  Flashloanable Pool Contract
  *  @notice Pool contract with `IERC3156` flashloans capabilities.
  *  @notice No fee is charged for taking flashloans from pool.
- *  @notice Flashloans can be taking in `ERC20` quote and `ERC20` collateral tokens.
+ *  @notice Flashloans can be taken in `ERC20` quote and `ERC20` collateral tokens.
  */
 abstract contract FlashloanablePool is Pool {
     using SafeERC20 for IERC20;
